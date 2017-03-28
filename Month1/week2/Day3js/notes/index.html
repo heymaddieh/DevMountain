@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+<html lang="en" ng-app="app">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div ng-controller="mainCtrl">
+            <h3>One way binding and click</h3>
+            {{ test }}
+            <button ng-click="updateTest()">Update Test</button>
+        </div>
+
+
+        <h3>Two way binding</h3>
+
+            <input ng-model="two"/>
+            {{two}}
+
+        <h3>Repeat for lists</h3>
+
+            <ul>
+                <li ng-repeat="topping in toppings"> {{ topping }} Topping goes here</li>
+            </ul>
+            <input ng-model="newTopping"
+            <button ng-click="addTopping()">Add Topping</button>
+
+
+
+    <script src="main.js"></script>
+    </body>
+</html>

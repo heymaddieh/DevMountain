@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.sterling { /*The menu bar*/
+    display: none;
+}
+
+.menu-options {
+    /*color: transparent;*/
+    display: none;
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url("https://s3.amazonaws.com/www-assets.invisionapp.com/marketplace/assets/mp-hero-06.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.hero2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marketplace-svg {
+    width: 80%;
+}
+
+.bottom-logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.move-right {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-created-by {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.hero-created-by a {
+    color: deeppink;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.product {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+.product img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-marketplace {
+    width: 100%;
+    height: 80vh;
+    background: black;
+}
+
+@media(min-width:750px) {
+    .move-right {
+        width: 100%;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+}
+
+@media(min-width:900px) {
+    .marketplace-svg {
+        max-width: 60%;
+    }
+
+    .sterling{
+        height: 45px;
+        width: 6vw;
+        text-align: center;
+        /*vertical-align: middle;*/
+        line-height: 45px;
+        display: block;
+    }
+    /*li {
+        display: block;*/
+    .menu-options {
+        font-size: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        float: right;
+        margin: 20px 100px;
+        width: 30vw;
+    }
+    .menu-options a {
+        text-decoration: none;
+        color: white;
+    }
+    .border {
+        border: 1px solid white;
+    }
+
+@media(min-width:1000px){
+    .product{
+        width: 49%;
+        display: inline-block;
+        
+     }
+    }
+}
