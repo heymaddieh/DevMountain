@@ -1,0 +1,18 @@
+$headerItemHeight: 48px;
+$headerItemWidth: 48px;
+
+.mainHeaderContainer{
+  height: 48px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+
+  div{
+    height: $headerItemHeight;
+    width: $headerItemWidth;
+    background-color: lightgrey;
+  }
+}
+
